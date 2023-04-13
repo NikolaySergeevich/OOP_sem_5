@@ -5,6 +5,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String phone;
+    private  char znac;
 
     public User(String firstName, String lastName, String phone) {
         this.firstName = firstName;
@@ -15,6 +16,18 @@ public class User {
     public User(String id, String firstName, String lastName, String phone) {
         this(firstName, lastName, phone);
         this.id = id;
+    }
+    public User(String id, String firstName, String lastName, String phone, char znak){
+        this(id,firstName, lastName, phone);
+        this.znac = znak;
+    }
+
+    public char getZnac() {
+        return znac;
+    }
+
+    public void setZnac(char znac) {
+        this.znac = znac;
     }
 
     public String getId() {

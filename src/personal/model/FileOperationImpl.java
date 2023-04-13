@@ -53,6 +53,7 @@ public class FileOperationImpl implements FileOperation {
                 writer.write(line);
                 // запись по символам
                 writer.append('\n');
+//                writer.append('\n');
             }
             writer.flush();
         } catch (IOException ex) {
